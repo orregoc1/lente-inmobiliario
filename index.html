@@ -1,262 +1,563 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lente Inmobiliario | Asesoría Legal y Gestión Patrimonial</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- FAVICON PARA LA PESTAÑA DEL NAVEGADOR -->
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <link rel="stylesheet" href="css/styles.css" />
     <!-- FontAwesome para íconos de redes sociales y WhatsApp -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- 1. BARRA DE NAVEGACIÓN SUPERIOR -->
     <header class="barra-navegacion">
-        <div class="logo-empresa">
-            <h2>LENTE <span>INMOBILIARIO</span></h2>
-        </div>
-        
-        <nav class="enlaces-navegacion">
-            <a href="#portada-principal">Inicio</a>
-            <a href="#sobre-nosotros">Nosotros</a>
-            <a href="#servicios-legales">Servicios</a>
-            <a href="#catalogo-inmuebles">Propiedades</a>
-            <a href="#blog-juridico">Blog</a>
-            <a href="#ubicacion-contacto">Ubicación</a>
-        </nav>
+      <div class="logo-empresa">
+        <!-- Enlace corregido que envuelve el título para llevar al home al hacer clic -->
+        <a
+          href="#hero-carrusel"
+          style="text-decoration: none; color: inherit; display: inline-block"
+        >
+          <h2>LENTE <span>INMOBILIARIO</span></h2>
+        </a>
+      </div>
 
-        <div class="acciones-navegacion">
-            <!-- Enlace al sistema privado de gestión (Backend Spring Boot / Login) -->
-            <a href="login.html" class="boton-portal-sistema">Portal Inmobiliario</a>
+      <nav class="enlaces-navegacion">
+        <a href="#hero-carrusel">Inicio</a>
+        <a href="#sobre-nosotros">Nosotros</a>
+        <a href="#servicios-legales">Servicios</a>
+        <a href="#catalogo-inmuebles">Propiedades</a>
+        <a href="#blog-juridico">Blog</a>
+        <a href="#ubicacion-contacto">Ubicación</a>
+      </nav>
 
-            <!-- Botón del Portafolio corporativo en Google Drive -->
-            <a href="https://drive.google.com/file/d/1KgoIBPzCDCeoXPNWCMUvyed17kSeZchJ/view" target="_blank" class="boton-portafolio-drive">
-                <i class="fa-solid fa-folder-open"></i> Portafolio
-            </a>
+      <div class="acciones-navegacion">
+        <!-- Enlace al sistema privado de gestión (Backend Spring Boot / Login) -->
+        <a href="login.html" class="boton-portal-sistema"
+          >Portal Inmobiliario</a
+        >
 
-            <!-- Enlace directo de conversión a WhatsApp -->
-            <a href="https://api.whatsapp.com/send/?phone=573228185272&text=Hola+Lente+Inmobiliario%2C+vi+su+p%C3%A1gina+web+y+requiero+asesor%C3%ADa+para+un+caso+inmobiliario.&type=phone_number&app_absent=0" target="_blank" class="boton-agendar-consulta">
-                Agendar Consulta
-            </a>
-        </div>
+        <!-- Botón del Portafolio corporativo en Google Drive -->
+        <a
+          href="https://drive.google.com/file/d/1KgoIBPzCDCeoXPNWCMUvyed17kSeZchJ/view"
+          target="_blank"
+          class="boton-portafolio-drive"
+        >
+          <i class="fa-solid fa-folder-open"></i> Portafolio
+        </a>
+
+        <!-- Enlace directo de conversión a WhatsApp -->
+        <a
+          href="https://api.whatsapp.com/send/?phone=573228185272&text=Hola+Lente+Inmobiliario%2C+vi+su+p%C3%A1gina+web+y+requiero+asesor%C3%ADa+para+un+caso+inmobiliario.&type=phone_number&app_absent=0"
+          target="_blank"
+          class="boton-agendar-consulta"
+        >
+          Agendar Consulta
+        </a>
+      </div>
     </header>
 
-    <!-- 2. PORTADA PRINCIPAL (Propuesta de valor jurídica) -->
-    <!-- 2. PORTADA PRINCIPAL (Propuesta de valor jurídica) -->
-    <section id="portada-principal" class="seccion-portada">
-        <div class="contenedor-portada-doble">
-            
-            <!-- Columna Izquierda: Texto Principal -->
-            <div class="contenido-portada">
-                <span class="etiqueta-destacada">Abogados Especialistas en Derecho Inmobiliario</span>
-                <h1>Más que abogados, somos tus aliados estratégicos.</h1>
-                <p>Brindamos asesoría legal especializada para clientes locales y extranjeros, asegurando que cada paso en el proceso inmobiliario sea una experiencia sin complicaciones.</p>
-                
-                <div class="botones-portada">
-                    <a href="https://api.whatsapp.com/send/?phone=573228185272&text=Hola+Lente+Inmobiliario%2C+vi+su+p%C3%A1gina+web+y+requiero+asesor%C3%ADa+para+un+caso+inmobiliario.&type=phone_number&app_absent=0" target="_blank" class="boton-principal-grande">
-                        Hablar con un Abogado
-                    </a>
-                    <a href="#servicios-legales" class="boton-secundario-borde">Ver Servicios →</a>
-                </div>
-
-                <div class="indicadores-experiencia">
-                    <div class="bloque-indicador"><strong>10+ Años</strong><span>De experiencia legal</span></div>
-                    <div class="bloque-indicador"><strong>Medellín</strong><span>Sede Laureles</span></div>
-                    <div class="bloque-indicador"><strong>100%</strong><span>Seguridad Jurídica</span></div>
-                </div>
-            </div>
-
-            <!-- Columna Derecha: Tarjeta Flotante de Beneficios / Conversión Directa -->
-            <div class="tarjeta-flotante-portada">
-                <div class="encabezado-tarjeta-flotante">
-                    <i class="fa-solid fa-shield-halved icono-tarjeta"></i>
-                    <h3>¿Por qué elegir Lente Inmobiliario?</h3>
-                </div>
-                
-                <ul class="lista-beneficios">
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        <div>
-                            <strong>Blindaje Jurídico Total</strong>
-                            <p>Estructuración y revisión minuciosa de contratos y promesas.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-earth-americas"></i>
-                        <div>
-                            <strong>Atención Local e Internacional</strong>
-                            <p>Acompañamiento remoto y presencial para cualquier tipo de inversionista.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-comments"></i>
-                        <div>
-                            <strong>Respuesta Inmediata</strong>
-                            <p>Asesoría sin intermediarios directamente por nuestro canal oficial.</p>
-                        </div>
-                    </li>
-                </ul>
-
-                <a href="https://api.whatsapp.com/send/?phone=573228185272&text=Hola+Lente+Inmobiliario%2C+deseo+consultar+mi+caso+con+un+abogado.&type=phone_number&app_absent=0" target="_blank" class="boton-tarjeta-flotante">
-                    <i class="fa-brands fa-whatsapp"></i> Consultar Mi Caso Ahora
+    <!-- 2. BANNER PRINCIPAL TIPO CARRUSEL CON FLECHAS LATERALES -->
+    <section id="hero-carrusel" class="seccion-carrusel-hero">
+      <div class="carrusel-contenedor-principal">
+        <!-- Diapositiva 1: Inicio -->
+        <div class="carrusel-slide active">
+          <div class="carrusel-contenido-grid">
+            <div class="carrusel-texto">
+              <span class="etiqueta-destacada"
+                >Abogados Especialistas en Derecho Inmobiliario</span
+              >
+              <h1>Más que abogados, somos tus aliados estratégicos.</h1>
+              <p>
+                Brindamos asesoría legal especializada para clientes locales y
+                extranjeros en Medellín y el Oriente Antioqueño, asegurando
+                seguridad jurídica absoluta.
+              </p>
+              <div class="botones-portada">
+                <a
+                  href="https://api.whatsapp.com/send/?phone=573228185272&text=Hola+Lente+Inmobiliario%2C+deseo+asesor%C3%ADa."
+                  target="_blank"
+                  class="boton-principal-grande"
+                >
+                  <i class="fa-brands fa-whatsapp"></i> Hablar con un Abogado
                 </a>
+              </div>
             </div>
-
+            <div class="carrusel-imagen-contenedor">
+              <img
+                src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80"
+                alt="Asesoría Legal Inmobiliaria"
+              />
+            </div>
+          </div>
         </div>
+
+        <!-- Diapositiva 2: Nosotros -->
+        <div class="carrusel-slide">
+          <div class="carrusel-contenido-grid">
+            <div class="carrusel-texto">
+              <span class="etiqueta-destacada">SOBRE NOSOTROS</span>
+              <h2>Un servicio profundamente personalizado y cercano</h2>
+              <p>
+                En Lente Inmobiliario nos alejamos del concepto tradicional para
+                transformarnos en tu faro guía, brindando claridad, dirección y
+                protección a tu patrimonio.
+              </p>
+              <p>
+                Nuestra labor se fundamenta en una integridad inquebrantable y
+                ética profesional.
+              </p>
+            </div>
+            <div class="carrusel-imagen-contenedor">
+              <img
+                src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=80"
+                alt="Equipo Lente Inmobiliario"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Diapositiva 3: Especialidades -->
+        <div class="carrusel-slide">
+          <div class="carrusel-contenido-grid">
+            <div class="carrusel-texto">
+              <span class="etiqueta-destacada">ESPECIALIDADES</span>
+              <h2>Soluciones jurídicas a la medida</h2>
+              <p>
+                Protegemos tus derechos mediante procesos judiciales efectivos,
+                trámites notariales ágiles (englobes, desenglobes) y mediaciones
+                directas para evitar pleitos largos.
+              </p>
+            </div>
+            <div class="carrusel-imagen-contenedor">
+              <img
+                src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80"
+                alt="Servicios Jurídicos"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Diapositiva 4: Identidad -->
+        <div class="carrusel-slide">
+          <div class="carrusel-contenido-grid">
+            <div class="carrusel-texto">
+              <span class="etiqueta-destacada">NUESTRA IDENTIDAD</span>
+              <h2>Innovación, Excelencia y Empatía</h2>
+              <p>
+                Combinamos la tecnología de vanguardia en gestión inmobiliaria
+                con un riguroso respaldo legal para que cada cliente experimente
+                total tranquilidad y transparencia.
+              </p>
+            </div>
+            <div class="carrusel-imagen-contenedor">
+              <img
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80"
+                alt="Identidad Corporativa"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Diapositiva 5: Casos de Éxito -->
+        <div class="carrusel-slide">
+          <div class="carrusel-contenido-grid">
+            <div class="carrusel-texto">
+              <span class="etiqueta-destacada">CASOS DE ÉXITO</span>
+              <h2>Resultados que generan confianza</h2>
+              <p>
+                <em
+                  >"Gracias a Lente Inmobiliario resolvimos un conflicto de
+                  arrendamiento en semanas y sin desgastarnos en largos juicios.
+                  Los recomiendo totalmente."</em
+                >
+              </p>
+              <p><strong>- Gloria Inés Serna, Propietaria.</strong></p>
+            </div>
+            <div class="carrusel-imagen-contenedor">
+              <img
+                src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80"
+                alt="Casos de Éxito"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Botones de Navegación Laterales (Muy visibles) -->
+        <button class="carrusel-btn prev-btn" onclick="moverSlide(-1)">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="carrusel-btn next-btn" onclick="moverSlide(1)">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <!-- Puntos indicadores inferiores -->
+        <div class="carrusel-puntos">
+          <span class="punto active" onclick="irSlide(0)"></span>
+          <span class="punto" onclick="irSlide(1)"></span>
+          <span class="punto" onclick="irSlide(2)"></span>
+          <span class="punto" onclick="irSlide(3)"></span>
+          <span class="punto" onclick="irSlide(4)"></span>
+        </div>
+      </div>
     </section>
 
-    <!-- 3. SECCIÓN SOBRE NOSOTROS Y COMUNIDAD DIGITAL -->
-    <section id="sobre-nosotros" class="seccion-bloque">
-        <div class="encabezado-seccion">
-            <h2>Nuestro Equipo Legal</h2>
-            <p>Especialistas comprometidos con la protección de tu patrimonio.</p>
+    <!-- 3. SECCIÓN: CÁPSULAS Y CONSEJOS EN VIDEO (YOUTUBE SHORTS) -->
+    <section id="seccion-videos" class="seccion-videos-youtube">
+      <div class="contenedor-videos-principal">
+        <!-- Encabezado de la Sección -->
+        <div class="videos-cabecera">
+          <div class="videos-titulos">
+            <a
+              href="https://www.youtube.com/@lenteinmobiliario6424"
+              target="_blank"
+              class="etiqueta-youtube"
+              style="text-decoration: none"
+            >
+              <i class="fa-brands fa-youtube"></i> CANAL OFICIAL DE YOUTUBE
+            </a>
+            <h2>Cápsulas & Consejos en Video</h2>
+            <p>
+              Consejos prácticos y directos en menos de un minuto para proteger
+              tu dinero, tus contratos y tu patrimonio inmobiliario.
+            </p>
+          </div>
+
+          <!-- Botón de Suscribirse en caja roja llamativa -->
+          <a
+            href="https://www.youtube.com/@lenteinmobiliario6424"
+            target="_blank"
+            class="boton-suscribirse-rojo"
+          >
+            <i class="fa-brands fa-youtube"></i> SUSCRIBIRSE AL CANAL
+          </a>
         </div>
 
-        <div class="contenedor-equipo">
-            <div class="tarjeta-abogado">
-                <img src="https://via.placeholder.com/300x350" alt="Equipo de Abogados Lente Inmobiliario">
-                <h3>Equipo Jurídico Lente</h3>
-                <p>Expertos en litigios, estudio de títulos y estructuración de proyectos inmobiliarios.</p>
+        <!-- Envoltorio con Flechas a los Lados y Track Desplazable -->
+        <div class="carrusel-videos-wrapper">
+          <button
+            class="video-nav-btn prev-btn-video"
+            onclick="desplazarVideos(-1)"
+          >
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <div class="videos-track-container" id="videoTrack">
+            <!-- Video 1 -->
+            <div class="tarjeta-video-short">
+              <span class="badge-short asesoria">ASESORÍA</span>
+              <div class="miniatura-short" id="container-0SQ-APnViSw">
+                <img
+                  src="https://img.youtube.com/vi/0SQ-APnViSw/hqdefault.jpg"
+                  alt="Asesoría Legal"
+                />
+              </div>
+              <button
+                type="button"
+                class="btn-play-overlay"
+                onclick="reproducirEnTarjeta('0SQ-APnViSw')"
+              >
+                <i class="fa-solid fa-play"></i>
+              </button>
+              <div class="info-short">
+                <h4>Tu caso es único: así te asesoramos profesionalmente</h4>
+                <a
+                  href="https://www.youtube.com/shorts/0SQ-APnViSw"
+                  target="_blank"
+                  class="link-ver-short"
+                >
+                  <i class="fa-solid fa-bolt"></i> Ver Short
+                </a>
+              </div>
             </div>
+
+            <!-- Video 2 -->
+            <div class="tarjeta-video-short">
+              <span class="badge-short novedad">NOVEDAD</span>
+              <div class="miniatura-short" id="container-D0KqeVRF8bE">
+                <img
+                  src="https://img.youtube.com/vi/D0KqeVRF8bE/hqdefault.jpg"
+                  alt="Línea Inmobiliaria"
+                />
+              </div>
+              <button
+                type="button"
+                class="btn-play-overlay"
+                onclick="reproducirEnTarjeta('D0KqeVRF8bE')"
+              >
+                <i class="fa-solid fa-play"></i>
+              </button>
+              <div class="info-short">
+                <h4>Lente Inmobiliario lanza su nueva Línea Inmobiliaria</h4>
+                <a
+                  href="https://www.youtube.com/shorts/D0KqeVRF8bE"
+                  target="_blank"
+                  class="link-ver-short"
+                >
+                  <i class="fa-solid fa-bolt"></i> Ver Short
+                </a>
+              </div>
+            </div>
+
+            <!-- Video 3 -->
+            <div class="tarjeta-video-short">
+              <span class="badge-short mediacion">MEDIACIÓN</span>
+              <div class="miniatura-short" id="container-o-WUe9Ik0uY">
+                <img
+                  src="https://img.youtube.com/vi/o-WUe9Ik0uY/hqdefault.jpg"
+                  alt="Línea Inmobiliaria"
+                />
+              </div>
+              <button
+                type="button"
+                class="btn-play-overlay"
+                onclick="reproducirEnTarjeta('o-WUe9Ik0uY')"
+              >
+                <i class="fa-solid fa-play"></i>
+              </button>
+              <div class="info-short">
+                <h4>Tu caso es único: así te asesoramos profesionalmente</h4>
+                <a
+                  href="https://www.youtube.com/shorts/o-WUe9Ik0uY"
+                  target="_blank"
+                  class="link-ver-short"
+                >
+                  <i class="fa-solid fa-bolt"></i> Ver Short
+                </a>
+              </div>
+            </div>
+
+            <!-- Video 4 -->
+            <div class="tarjeta-video-short">
+              <span class="badge-short certificados">CERTIFICADOS</span>
+              <div class="miniatura-short" id="container-jHRvMaibQ8g">
+                <img
+                  src="https://img.youtube.com/vi/jHRvMaibQ8g/hqdefault.jpg"
+                  alt="Línea Inmobiliaria"
+                />
+              </div>
+              <button
+                type="button"
+                class="btn-play-overlay"
+                onclick="reproducirEnTarjeta('jHRvMaibQ8g')"
+              >
+                <i class="fa-solid fa-play"></i>
+              </button>
+              <div class="info-short">
+                <h4>
+                  Problemas en propiedades podrían NO estar visibles en
+                  escrituras
+                </h4>
+                <a
+                  href="https://www.youtube.com/shorts/jHRvMaibQ8g"
+                  target="_blank"
+                  class="link-ver-short"
+                >
+                  <i class="fa-solid fa-bolt"></i> Ver Short
+                </a>
+              </div>
+            </div>
+
+            <!-- Video 5 -->
+            <div class="tarjeta-video-short">
+              <span class="badge-short prevencion">PREVENCIÓN</span>
+              <div class="miniatura-short" id="container-zqaRfhtjyjs">
+                <img
+                  src="https://img.youtube.com/vi/zqaRfhtjyjs/hqdefault.jpg"
+                  alt="Línea Inmobiliaria"
+                />
+              </div>
+              <button
+                type="button"
+                class="btn-play-overlay"
+                onclick="reproducirEnTarjeta('zqaRfhtjyjs')"
+              >
+                <i class="fa-solid fa-play"></i>
+              </button>
+              <div class="info-short">
+                <h4>
+                  La buena asesoría empieza antes de firmar cualquier contrato
+                </h4>
+                <a
+                  href="https://www.youtube.com/shorts/zqaRfhtjyjs"
+                  target="_blank"
+                  class="link-ver-short"
+                >
+                  <i class="fa-solid fa-bolt"></i> Ver Short
+                </a>
+              </div>
+            </div>
+
+            <!-- Video 6 -->
+            <div class="tarjeta-video-short">
+              <span class="badge-short especialidad">ESPECIALIDAD</span>
+              <div class="miniatura-short" id="container-8yXCKzaH3JA">
+                <img
+                  src="https://img.youtube.com/vi/8yXCKzaH3JA/hqdefault.jpg"
+                  alt="Línea Inmobiliaria"
+                />
+              </div>
+              <button
+                type="button"
+                class="btn-play-overlay"
+                onclick="reproducirEnTarjeta('8yXCKzaH3JA')"
+              >
+                <i class="fa-solid fa-play"></i>
+              </button>
+              <div class="info-short">
+                <h4>¿Qué crees que es un abogado inmobiliario?</h4>
+                <a
+                  href="https://www.youtube.com/shorts/8yXCKzaH3JA"
+                  target="_blank"
+                  class="link-ver-short"
+                >
+                  <i class="fa-solid fa-bolt"></i> Ver Short
+                </a>
+              </div>
+            </div>
+
+            <!-- Video 7 -->
+            <div class="tarjeta-video-short">
+              <span class="badge-short arrendamiento">ARRENDAMIENTO</span>
+              <div class="miniatura-short" id="container-GQ6pyqDw6rM">
+                <img
+                  src="https://img.youtube.com/vi/GQ6pyqDw6rM/hqdefault.jpg"
+                  alt="Línea Inmobiliaria"
+                />
+              </div>
+              <button
+                type="button"
+                class="btn-play-overlay"
+                onclick="reproducirEnTarjeta('GQ6pyqDw6rM')"
+              >
+                <i class="fa-solid fa-play"></i>
+              </button>
+              <div class="info-short">
+                <h4>
+                  No cometas estos errores al momento de arrendar un inmueble
+                </h4>
+                <a
+                  href="https://www.youtube.com/shorts/GQ6pyqDw6rM"
+                  target="_blank"
+                  class="link-ver-short"
+                >
+                  <i class="fa-solid fa-bolt"></i> Ver Short
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="video-nav-btn next-btn-video"
+            onclick="desplazarVideos(1)"
+          >
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
         </div>
 
-        <!-- Bloque de canales oficiales de contenido (YouTube e Instagram) -->
-        <div class="promocion-redes">
-            <h3>Aprende sobre Derecho Inmobiliario en nuestras redes</h3>
-            <p>Publicamos contenido semanal sobre leyes, consejos para arrendadores y protección patrimonial.</p>
-            <div class="botones-redes">
-                <a href="https://youtube.com" target="_blank" class="boton-red-youtube"><i class="fa-brands fa-youtube"></i> Canal de YouTube</a>
-                <a href="https://instagram.com" target="_blank" class="boton-red-instagram"><i class="fa-brands fa-instagram"></i> Instagram</a>
-            </div>
-        </div>
+        <!-- Contenedor para las bolitas indicadoras del carrusel de videos -->
+        <div class="indicadores-videos" id="videoDots"></div>
+      </div>
     </section>
 
-    <!-- 4. SERVICIOS DE ASESORÍA LEGAL -->
-    <section id="servicios-legales" class="seccion-bloque fondo-gris">
-        <div class="encabezado-seccion">
-            <h2>Servicios Especializados</h2>
-            <p>Soluciones jurídicas a la medida de tus necesidades</p>
-        </div>
-
-        <div class="contenedor-servicios">
-            <div class="tarjeta-servicio">
-                <i class="fa-solid fa-file-contract"></i>
-                <h3>Estudio de Títulos y Promesas</h3>
-                <p>Verificación técnica e historial del inmueble para compras 100% seguras.</p>
-                <a href="https://api.whatsapp.com/send/?phone=573228185272&text=Hola+Lente+Inmobiliario%2C+deseo+consultar+sobre+Estudio+de+Titulos.&type=phone_number&app_absent=0" target="_blank" class="enlace-servicio">Consultar por WhatsApp →</a>
-            </div>
-
-            <div class="tarjeta-servicio">
-                <i class="fa-solid fa-scale-balanced"></i>
-                <h3>Procesos de Arrendamiento</h3>
-                <p>Redacción de contratos blindados, cobro de carteras y restitución de inmuebles.</p>
-                <a href="https://api.whatsapp.com/send/?phone=573228185272&text=Hola+Lente+Inmobiliario%2C+deseo+consultar+sobre+Arrendamientos.&type=phone_number&app_absent=0" target="_blank" class="enlace-servicio">Consultar por WhatsApp →</a>
-            </div>
-
-            <div class="tarjeta-servicio">
-                <i class="fa-solid fa-shield-halved"></i>
-                <h3>Blindaje y Patrimonio</h3>
-                <p>Estructuración de mecanismos notariales para la protección de tus bienes.</p>
-                <a href="https://api.whatsapp.com/send/?phone=573228185272&text=Hola+Lente+Inmobiliario%2C+deseo+consultar+sobre+Blindaje+Patrimonial.&type=phone_number&app_absent=0" target="_blank" class="enlace-servicio">Consultar por WhatsApp →</a>
+<!-- 4. CATÁLOGO DE PROPIEDADES (Carrusel Horizontal Dinámico) -->
+<section id="catalogo-inmuebles" class="seccion-bloque seccion-propiedades-carousel">
+    <div class="contenedor-propiedades-principal">
+        
+        <div class="encabezado-seccion-propiedades">
+            <div>
+                <h2>Propiedades Destacadas</h2>
+                <p>Inmuebles gestionados bajo nuestro acompañamiento legal</p>
             </div>
         </div>
-    </section>
 
-    <!-- 5. CATÁLOGO DE PROPIEDADES (Renderizado dinámicamente desde la API Spring Boot) -->
-    <section id="catalogo-inmuebles" class="seccion-bloque">
-        <div class="encabezado-seccion">
-            <h2>Propiedades Destacadas</h2>
-            <p>Inmuebles gestionados bajo nuestro acompañamiento legal</p>
-        </div>
+        <!-- Envoltorio con Flechas a los Lados y Track Desplazable -->
+        <div class="carrusel-propiedades-wrapper">
+            <button class="prop-nav-btn prev-btn-prop" onclick="desplazarPropiedades(-1)">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
 
-        <!-- Contenedor dinámico consumido por app.js -->
-        <div id="gridPropiedades" class="contenedor-propiedades">
-            <p class="texto-cargando">Cargando catálogo desde el servidor...</p>
-        </div>
-    </section>
-
-    <!-- 6. BLOG JURÍDICO -->
-    <section id="blog-juridico" class="seccion-bloque fondo-gris">
-        <div class="encabezado-seccion">
-            <h2>Blog Jurídico</h2>
-            <p>Noticias y artículos de interés para propietarios e inversionistas</p>
-        </div>
-
-        <div class="contenedor-articulos">
-            <article class="tarjeta-articulo">
-                <h3>¿Qué revisar antes de firmar una Promesa de Compraventa?</h3>
-                <p>Descubre los 5 puntos jurídicos clave que debes verificar para evitar estafas...</p>
-            </article>
-
-            <article class="tarjeta-articulo">
-                <h3>Novedades en los incrementos de arriendo para este año</h3>
-                <p>Te explicamos cómo aplica la regulación según la ley de arrendamientos...</p>
-            </article>
-        </div>
-    </section>
-
-    <!-- 7. CONTACTO Y UBICACIÓN FÍSICA -->
-    <section id="ubicacion-contacto" class="seccion-bloque">
-        <div class="encabezado-seccion">
-            <h2>Ubicación y Contacto</h2>
-            <p>Visítanos en nuestra sede principal en Medellín</p>
-        </div>
-
-        <div class="contenedor-contacto-mapa">
-            <div class="datos-contacto">
-                <p><strong><i class="fa-solid fa-location-dot"></i> Dirección:</strong> Sector Laureles, Medellín, Colombia</p>
-                <p><strong><i class="fa-solid fa-phone"></i> Teléfono:</strong> +57 322 818 5272</p>
-                <p><strong><i class="fa-solid fa-envelope"></i> Correo:</strong> contacto@lenteinmobiliario.com</p>
+            <!-- Contenedor dinámico consumido por app.js -->
+            <div class="propiedades-track-container" id="gridPropiedades">
+                <p class="texto-cargando">Cargando catálogo desde el servidor...</p>
             </div>
 
-            <div class="mapa-google">
+            <button class="prop-nav-btn next-btn-prop" onclick="desplazarPropiedades(1)">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <!-- Puntos indicadores inferiores -->
+        <div class="indicadores-propiedades" id="propDots"></div>
+
+    </div>
+</section>
+
+    <!-- 5. UBICACIÓN, CONTACTO Y PIE DE PÁGINA PROFESIONAL -->
+<footer class="footer-corporativo">
+    <div class="footer-contenedor">
+        
+        <!-- Columna 1: Marca e Identidad -->
+        <div class="footer-columna">
+            <h3 class="footer-logo">LENTE <span>INMOBILIARIO</span></h3>
+            <p class="footer-descripcion">
+                Más que abogados, somos tus aliados estratégicos en derecho inmobiliario y gestión patrimonial en Medellín y el Oriente Antioqueño.
+            </p>
+            <div class="footer-redes">
+                <a href="https://www.youtube.com/@lenteinmobiliario6424" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://api.whatsapp.com/send/?phone=573228185272" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Columna 2: Enlaces de Navegación -->
+        <div class="footer-columna">
+            <h4>Navegación</h4>
+            <ul class="footer-enlaces">
+                <li><a href="#hero-carrusel">Inicio</a></li>
+                <li><a href="#sobre-nosotros">Nosotros</a></li>
+                <li><a href="#servicios-legales">Servicios</a></li>
+                <li><a href="#catalogo-inmuebles">Propiedades</a></li>
+                <li><a href="#seccion-videos">Cápsulas en Video</a></li>
+            </ul>
+        </div>
+
+        <!-- Columna 3: Información de Contacto -->
+        <div class="footer-columna">
+            <h4>Contacto</h4>
+            <ul class="footer-contacto-lista">
+                <li><i class="fa-solid fa-location-dot"></i> Sector Laureles, Medellín, Colombia</li>
+                <li><i class="fa-solid fa-phone"></i> +57 322 818 5272</li>
+                <li><i class="fa-solid fa-envelope"></i> contacto@lenteinmobiliario.com</li>
+                <li><i class="fa-solid fa-clock"></i> Lun - Vie: 8:00 AM - 6:00 PM</li>
+            </ul>
+        </div>
+
+        <!-- Columna 4: Mapa Interactivo Compacto -->
+        <div class="footer-columna">
+            <h4>Ubicación Sede</h4>
+            <div class="footer-mapa-contenedor">
                 <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.100806497258!2d-75.58988!3d6.24388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428ff2f74bfd5%3A0x6b8dbf932e57ec3c!2sLaureles%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1680000000000!5m2!1ses!2sco" 
-                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+                    width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy">
                 </iframe>
             </div>
         </div>
-    </section>
 
-    <!-- PIE DE PÁGINA -->
-    <footer class="pie-pagina">
-        <p>&copy; 2026 Lente Inmobiliario. Todos los derechos reservados.</p>
-    </footer>
-
-    <!-- MODAL LIGERO DE CAPTURA PARA BASE DE DATOS Y WHATSAPP -->
-<div id="modalContacto" class="modal-fondo" style="display: none;">
-    <div class="modal-contenido">
-        <span class="cerrar-modal" onclick="cerrarModal()">&times;</span>
-        <h3>Agendar Consulta / Solicitud</h3>
-        <p id="subtituloModal">Completa tus datos para conectarte directamente con un abogado.</p>
-
-        <form id="formSolicitudContacto" onsubmit="procesarSolicitud(event)">
-            <!-- IDs ocultos para mapear a la base de datos -->
-            <input type="hidden" id="modalIdInmueble" value="">
-            
-            <div class="campo-form">
-                <label for="nombreCliente">Nombre Completo:</label>
-                <input type="text" id="nombreCliente" placeholder="Ej: María Gómez" required>
-            </div>
-
-            <div class="campo-form">
-                <label for="telefonoCliente">Teléfono / WhatsApp:</label>
-                <input type="tel" id="telefonoCliente" placeholder="Ej: +57 300 123 4567" required>
-            </div>
-
-            <div class="campo-form">
-                <label for="mensajeCliente">Mensaje o Consulta:</label>
-                <textarea id="mensajeCliente" rows="3" required></textarea>
-            </div>
-
-            <button type="submit" class="boton-agendar-consulta" style="width: 100%; margin-top: 1rem;">
-                <i class="fa-brands fa-whatsapp"></i> Guardar y Abrir WhatsApp
-            </button>
-        </form>
     </div>
-</div>
+
+    <!-- Barra Inferior de Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2026 Lente Inmobiliario. Todos los derechos reservados. Diseñado con altos estándares de seguridad jurídica y tecnológica.</p>
+    </div>
+</footer>
 
     <!-- Lógica JavaScript para conectar con el Backend -->
     <script src="js/app.js"></script>
-</body>
+  </body>
 </html>
